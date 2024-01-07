@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Making Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <style>
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        fieldset > label{
+            color: rgb(75, 9, 9);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <section>
+            <h2>Please Fill Up the Form</h2>
+            <form>
+                <label for="name">Your Name:
+                    <input id="name" type="text" placeholder="Your Name">
+                </label>
+                <label for="email">Your Email:
+                    <input type="email" name="" id="email" placeholder="Your Email">
+                </label>
+                <label for="Password"> Password:
+                    <input type="password" id="password" placeholder="Your Password">
+                </label>
+                <label for="phonenumber">Your Phone:
+                    <input type="number" id="phone" placeholder="Your Phonenumber">
+
+                </label>
+                <label for="">Gender:
+                    <select name="" id="">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="others">Others</option>
+                    </select>
+
+                </label>
+                <!-- <label for="">Upload Image:
+                    <input type="image" src="" alt="">
+                </label> -->
+                <label for="">Upload Image:
+                    <input type="file" name="fileToUpload" id="fileToUpload">
+                    
+                </label>
+
+                <!-- <label for="submit">Submit:
+
+                    <button>Submit</button>
+
+                </label> -->
+
+                <fieldset>
+                    <legend>Pick One Chocklate
+                    </legend>
+                    <label for="katbary">
+                        <input type="radio" name="Chocklate" id="Katbary">Katbary
+
+<!-- name will be same ,otherwise we can't select one  -->
+                    </label>
+                    <label for="Dairy Milk">
+                        <input type="radio" name="Chocklate" id="Dairy Milk">Dairy Milk
+                    </label>
+                    <label for="Rafello">
+                        <input type="radio" name="Chocklate" id="Rafello">Rafello
+                    </label>
+                    <label for="Dark">
+                        <input type="radio" name="Chocklate" id="Dairy Milk">Dark
+                    </label>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Pick one icecream</legend>
+                    <label for="iglu">
+                        <input type="checkbox" name="icecream" id="iglu">Iglu
+                    </label>
+                    <label for="kulfi">
+                        <input type="checkbox" name="icecream" id="kulfi">Kulfi
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        special Feature</legend>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                </fieldset>
+
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
